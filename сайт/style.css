@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+font-family: "Roboto", sans-serif;
+
+}
+
+/*шапка*/
+
+.header {
+	background-color: #3b3232;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+.logo-link {
+padding: 0;
+ display: inline-block;
+ 	margin-left: 80px;
+
+}
+.logo__header {
+	height: 12px;
+	width: 120px;
+
+}
+.but {
+	width: 80px;
+	height: 40px;
+	margin-right: 20px;
+}
+.nav {
+	padding-right: 150px;
+	display: flex;
+	justify-content: space-around;
+}
+button {
+	border-radius: 5px;
+}
+/*Приветствие*/
+.background-wrapper {
+  position: relative;
+  height: 100vh; /* или нужная вам высота */
+  overflow: hidden;
+}
+
+
+.welcome{
+	background-image: url("C:/Users/Sergey/Pictures/nov.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	padding: 400px;
+filter: blur(2px);
+	max-height: 40vh;
+	background-position: center;
+	 z-index: -1;
+	 transform: scale(1.05);
+
+}
+.elegant-welcome {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+  color: white;
+  
+}
+
+.elegant-welcome h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: 400;
+  margin: 20px 0;
+  color: #56ac55;
+}
+
+.elegant-welcome h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+
+}
+
+.elegant-welcome p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
+
+.divider1 {
+  width: 100px;
+  height: 1px;
+  background: #333;
+  margin: 20px auto;
+  opacity: 0.3;
+}
+
+.divider {
+height: 10px;
+  background: linear-gradient(90deg,
+              #fff, black);
+  background-size: 400% 400%;
+  margin: 10px 30%;
+  border-radius: 4px;
+  animation: gradientFlow 8s ease infinite;
+}
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/*карточки кофейни*/
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.cofe__card {
+
+	width: 300px;
+	height: 400px;
+	background-color: #312F30;
+	border-radius: 10px;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.cofe__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.image {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	background-position: center;
+}
+
+.cofe {
+	background-image: url("C:/Users/Sergey/Pictures/cofe_main.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+	flex-wrap: wrap;
+	gap: 15px;
+
+
+}
+
+h4{
+	text-align: center;
+	color: #fff;
+
+
+}
+
+h2 {
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 50px;
+	font-size: 30px;
+	color: #fff;
+}
+p {
+	text-align: center;
+	margin: 0;
+	opacity: 0.7;
+	color: #fff;
+
+}
+.text {
+	padding-bottom: 40px;
+}
+a {
+	text-decoration: none;
+
+
+}
+.divider2 {
+	height: 40px;
+	background-color: #000;
+}
+/*карточки фастфуда*/
+
+.fastfood {
+background-image: url("C:/Users/Sergey/Pictures/burger_main.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+	
+flex-wrap: wrap;
+	gap: 15px;
+
+}
+.fastfood_zagolovok{
+padding-left: 90%;
+}
+
+
+
+
+.fastfood__card {
+
+	width: 300px;
+	height: 400px;
+	background-color: #312F30;
+	border-radius: 10px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.fastfood__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.divider3{
+height: 40px;
+background-color: #56ac55;
+border: 5px solid;
+border-color: #312F30;
+}
+/*карточки пиццерий*/
+.pizza {
+	background-image: url("C:/Users/Sergey/Pictures/pizza_main.webp");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+object-fit: cover;
+flex-wrap: wrap;
+	gap: 15px;
+
+}
+.pizza__card {
+
+	width: 300px;
+	height: 400px;
+	background-color: #312F30;
+	border-radius: 10px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.pizza__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+/*футер*/
+
+.footer {
+	background-color: #3b3232;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.social {
+	padding-right: 150px;
+	display: flex;
+	justify-content: space-around;
+}
+.seti__link {
+	padding: 0;
+	margin: 0 20px;
+}
